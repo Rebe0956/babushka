@@ -96,20 +96,13 @@
             grid-template-columns: 1fr;
         }
     }
-
 </style>
 
 <body>
     <header>
         <h1></h1>
         <h2>Menu</h2>
-        <nav>
 
-            <button class="menu-item" data-mad="forretter"> Forretter</button>
-            <button class="menu-item" data-mad="hovedretter"> Hovedretter</button>
-            <button class="menu-item" data-mad="desserter"> Desserter</button>
-
-        </nav>
     </header>
 
     <main class="container">
@@ -173,7 +166,7 @@
                     //                    document.querySelector("header h1").textContent = madFilter;
 
                     dest.querySelector(".data-navn").textContent = ret.navn;
-                    dest.querySelector(".data-billede").src = "imgs/small/" + ret.billede + "-sm.jpg";
+                    dest.querySelector(".data-billede").src = "imgs/medium/" + ret.billede + "-md.jpg";
                     dest.querySelector(".data-billede").alt = "billede" + ret.navn;
                     dest.querySelector(".data-kortbeskrivelse").textContent = ret.kortbeskrivelse;
                     dest.querySelector(".data-pris").textContent = ret.pris;
@@ -181,7 +174,6 @@
                 }
             })
         }
-
     </script>
 
 
